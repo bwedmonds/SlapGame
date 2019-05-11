@@ -1,0 +1,15 @@
+#background {
+  background-image: url("/assets/images/cloudy_sky.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-pop {
+  background-image: url("/assets/images/highlight.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
