@@ -16,6 +16,12 @@
   height: auto;
 }
 
+.zach-nav {
+  height: 15vh;
+  z-index: 750;
+  background: rgba(245, 245, 245, 0.187)
+}
+
 /* .progress-bar {
   role: "progressbar";
   aria-valuemin: "0";
