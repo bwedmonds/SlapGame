@@ -2,53 +2,62 @@ let name = "Zach"
 let health = 0;
 let hits = 0;
 
+let player = {
+  name: Zach,
+  smileyness: 0,
+  smileyIndex: 0,
+  frownPower: 50,
+  moods: ["specialfrown", "regularRBF", "pseudosmiley"]
+  hits: 0,
+  images: ['/assets/images/zach_frown.png', '/assets/images/zach_rbf.png', '/assets/images/zach_selfie.png']
+  items: []
+}
+
 function highFive() {
-  health++;
-  hits++;
-  // alert(health);
+  player.smileyness++;
+  player.hits++;
   update()
 }
 
 function rumPunch() {
-  health += 2;
-  hits += 1;
-  // alert(health);
+  player.smileyness += 2;
+  player.hits += 1;
   update()
 }
 
 function cake() {
-  health += 2;
-  hits += 1;
+  player.smileyness += 2;
+  player.hits += 1;
   update();
 }
 
 function tickle() {
-  health += 3;
-  hits += 1;
+  player.smileyness += 3;
+  player.hits += 1;
   update();
 }
 
 function cuddle() {
-  health += 3;
-  hits += 1;
+  player.smileyness += 3;
+  player.hits += 1;
   update();
 }
 
 function hug() {
-  health += 3;
-  hits += 1;
+  player.smileyness += 3;
+  player.hits += 1;
   update();
 }
 
 function update() {
-  // document.getElementById("health").innerText = health;
-  document.getElementById('hits').innerText = hits.toString();
-  document.getElementById('name').innerText = name;
-  document.getElementById('health').innerText = health.toString();
-  document.getElementById('health').setAttribute('style', `width: ${health.toString()}%`)
+  // document.getElementById("smileyness").innerText = player.smileyness;
+  document.getElementById('hits').innerText = player.hits.toString();
+  document.getElementById('name').innerText = player.name;
+  document.getElementById('smileyness').innerText = player.smileyness.toString();
+  document.getElementById('smileyness').setAttribute('style', `width: ${player.smileyness.toString()}%`)
 }
 
 update()
-// highFive()
-// rumPunch()
-// cake()
+highFive()
+rumPunch()
+cake()
