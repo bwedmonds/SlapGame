@@ -12,4 +12,19 @@
   background-image: url("/assets/images/highlight.png");
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+/* .progress-bar {
+  role: "progressbar";
+  aria-valuemin: "0";
+  aria-valuemax: "100";
+  [attr.aria-valuenow]: "health";
+  [style.width.%]: "trainingProgress";
+  {{trainingProgress}}%: Complete;
+} */
+
+.footer {
+  background-color: darkgrey;
 }
