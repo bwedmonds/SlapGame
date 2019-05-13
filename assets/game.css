@@ -6,20 +6,40 @@
   background-size: cover;
   height: 100%;
   width: 100%;
+  padding-top: 25vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
 }
 
 .bg-pop {
   background-image: url("/assets/images/highlight.png");
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
+  box-shadow: 10px 10px 50px 0 rgb(142, 142, 142) inset, -10px -10px 50px 0 rgb(142, 142, 142) inset;
+  width: auto;
+  height: 50vh;
 }
 
 .zach-nav {
   height: 15vh;
   z-index: 750;
   background: rgba(245, 245, 245, 0.187)
+}
+
+.btn-smilies {
+  background-color: #0D3b66;
+  color: white;
+}
+
+.btn-extra {
+  background-color: #EF8354;
+  color: white;
+}
+
+.btn-mods {
+  background-color: #F0544F;
+  color: white;
 }
 
 /* .progress-bar {
@@ -31,6 +51,19 @@
   {{trainingProgress}}%: Complete;
 } */
 
-.footer {
-  background-color: darkgrey;
+.header-col {
+  background-color: whitesmoke;
+  height: 10vh;
+  width: 100vw;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center
+}
+
+.footer-row {
+  background-color: whitesmoke;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }

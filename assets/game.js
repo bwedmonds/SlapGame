@@ -13,18 +13,18 @@ var player = {
   items: []
 }
 
-function increaseSmileyIndex() {
-  if (player.smileyness == player.frownPower) {
-    player.smileyIndex++;
-  } else if (player.smileyness == player.frownPower * 2) {
-    player.smileyIndex++;
-  }
-  drawZach()
-}
+// function increaseSmileyIndex() {
+//   if (player.smileyness == player.frownPower) {
+//     player.smileyIndex++;
+//   } else if (player.smileyness == player.frownPower * 2) {
+//     player.smileyIndex++;
+//   }
+//   drawZach()
+// }
 
-function drawZach() {
-  document.getElementById("zach-image").setAttribute("src", player.images[player.smileyIndex])
-}
+// function drawZach() {
+//   document.getElementById("zach-image").setAttribute("src", player.images[player.smileyIndex])
+// }
 
 var items = {
   bear: {
@@ -104,10 +104,25 @@ function addmods() {
   return currentMods;
 }
 
+// function changeBackground() {
+//   if (player.smileyness >= 50) {
+//     document.getElementById('background').style.background-image = 'url(/assets/images/partly_cloudy_big.jpg)';
+//   }
+// }
+
 function reset() {
   player.smileyness = 0;
   player.hits = 0;
   player.items.pop();
+  document.getElementById('playerButton1').disabled = false;
+  document.getElementById('playerButton2').disabled = false;
+  document.getElementById('playerButton3').disabled = false;
+  document.getElementById('playerButton4').disabled = false;
+  document.getElementById('playerButton5').disabled = false;
+  document.getElementById('playerButton6').disabled = false;
+  document.getElementById('playerButton7').disabled = false;
+  document.getElementById('playerButton8').disabled = false;
+  document.getElementById('playerButton9').disabled = false;
   update();
 }
 
@@ -121,11 +136,20 @@ function update() {
 
 function winner() {
   if (player.smileyness >= 100) {
+    document.getElementById('playerButton1').disabled = true;
+    document.getElementById('playerButton2').disabled = true;
+    document.getElementById('playerButton3').disabled = true;
+    document.getElementById('playerButton4').disabled = true;
+    document.getElementById('playerButton5').disabled = true;
+    document.getElementById('playerButton6').disabled = true;
+    document.getElementById('playerButton7').disabled = true;
+    document.getElementById('playerButton8').disabled = true;
+    document.getElementById('playerButton9').disabled = true;
     alert('What? Zach smiled?! Inconceivable! Reset to defeat RBF again!');
   }
+  update()
 }
 
-// update()
-// highFive()
-// rumPunch()
-// cake()
+update()
+
+

@@ -15,17 +15,38 @@
 </head>
 
 <!-- <header> -->
+<!-- <header class="container-fluid">
+  <div class="row w-100 position-fixed zach-nav">
+    <div class="col-12 justify-contents-center">
+      <h1>Zach Attack!</h1>
+      <h3>Even Grumpy Cat thinks Zach needs to smile.</h3>
+      <p>Help Grumpy turn Zach's frown upsidedown.</p>
+    </div>
+  </div>
+</header> -->
+
+<header class="row">
+  <!-- <div class="header-col w-100"> -->
+  <!-- <div class="justify-content-end align-items-center"> -->
+  <div class="col-8 offset-4 justify-content-center align-items-center">
+    <!-- <div class="row w-100 position-fixed zach-nav">
+      <div class="col-12 justify-contents-center"> -->
+    <h1>Zach Attack!</h1>
+    <h3>Even Grumpy Cat thinks Zach needs to smile.</h3>
+    <p>Help Grumpy turn Zach's frown upsidedown.</p>
+  </div>
+</header>
 
 <body>
   <div class="container-fluid" id="background">
-    <div class="row w-100 position-fixed zach-nav align-items-center justify-contents-center"></div>
-    <div class="row align-items-center justify-contents-center">
+    <!-- <div class="row w-100 position-fixed zach-nav align-items-center justify-contents-center"></div> -->
+    <!-- <div class="row align-items-center justify-contents-center">
       <div class="col-12">
         <h1>Zach Attack!</h1>
         <h3>Even Grumpy Cat thinks Zach needs to smile.</h3>
         <p>Help Grumpy turn Zach's frown upsidedown.</p>
       </div>
-    </div>
+    </div> -->
     <!-- </header> -->
 
     <!-- <body> -->
@@ -36,20 +57,21 @@
     </div>
     <div class="row justify-contents-center">
       <div class="col-2">
-        <button class="btn btn-success" onclick="smilies(1)">High Five!</button>
+        <button class="btn btn-smilies" id="playerButton1" onclick="smilies(1)">High Five!</button>
       </div>
       <div class="col-2">
-        <button class="btn btn-success" onclick="smilies(2)">Rum Punch!</button>
+        <button class="btn btn-smilies" id="playerButton2" onclick="smilies(2)">Rum Punch!</button>
       </div>
       <div class="col-2">
-        <button class="btn btn-success" onclick="smilies(2)">Cake!</button>
+        <button class="btn btn-smilies" id="playerButton3" onclick="smilies(2)">Cake!</button>
       </div>
     </div>
-    <div class="row d-flex justify-contents-between">
-      <div class="col-6"><img class="bg-pop" src="/assets/images/grumpy.png" style="width: 40vh; height: auto"
-          alt="Grumpy"></div>
-      <div class="col-6"><img class="bg-pop" id="zach-image" src="/assets/images/zach_frown.png"
-          style="width: 35vh; height: auto" alt="Zach Frown"></div>
+    <div class="row">
+      <div class="col-6 bg-pop d-flex align-items-center justify-contents-center"><img src="/assets/images/grumpy.png"
+          style="width: auto; height: 70%" alt="Grumpy">
+      </div>
+      <div class="col-6 bg-pop d-flex align-items-center justify-contents-center"><img id="zach-image"
+          src="/assets/images/zach_frown.png" style="width: auto; height: 70%;" alt="Zach Frown"></div>
     </div>
     <!-- </div>
   <div class="container-fluid"> -->
@@ -57,30 +79,32 @@
       <div class="col">
         <div class="row">
           <div class="col-2">
-            <button class="btn btn-success" onclick="smilies(3)">Tickle!</button>
+            <button class="btn btn-extra" id="playerButton4" onclick="smilies(3)">Tickle!</button>
           </div>
           <div class="col-2">
-            <button class="btn btn-success" onclick="smilies(3)">Cuddle!</button>
+            <button class="btn btn-extra" id="playerButton5" onclick="smilies(3)">Cuddle!</button>
           </div>
-          <div class="col-2"><button class="btn btn-success" onclick="smilies(3)">Hug!</button>
+          <div class="col-2"><button class="btn btn-extra" id="playerButton6" onclick="smilies(3)">Hug!</button>
           </div>
         </div>
         <div class="row">
-          <div class="col-2"><button class="btn btn-success" onclick="giveItem('bear')">Bear!</button>
+          <div class="col-2"><button class="btn btn-mods" id="playerButton7" onclick="giveItem('bear')">Bear!</button>
           </div>
-          <div class="col-2"><button class="btn btn-success" onclick="giveItem('feather')">Feather!</button>
+          <div class="col-2"><button class="btn btn-mods" id="playerButton8"
+              onclick="giveItem('feather')">Feather!</button>
           </div>
-          <div class="col-2"><button class="btn btn-success" onclick="giveItem('puppies')">Puppies!</button>
+          <div class="col-2"><button class="btn btn-mods" id="playerButton9"
+              onclick="giveItem('puppies')">Puppies!</button>
           </div>
         </div>
-        <div class="row justify-contents-center">
-          <div class="col-6">
+        <div class="row">
+          <div class="col-6 d-flex align-items-center justify-contents-center">
             <h5>Choose addons carefully!</h5>
           </div>
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col align-items-center justify-contents-center">
       <div class="row">
         <div class="col-2">
           <h5>Name: <span id="name"></span></h5>
@@ -115,9 +139,8 @@
 </body>
 
 
-<footer>
-  <div class="row justify-contents-center align-items-center">
-    <button class="btn btn-warning" id="reset" onclick="reset()">Reset</button>
+<footer class="footer-row">
+  <button class="btn btn-dark" id="reset" onclick="reset()">Reset</button>
   </div>
 </footer>
 
