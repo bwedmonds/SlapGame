@@ -1,7 +1,3 @@
-// let name = "Zach"
-// let health = 0;
-// let hits = 0;
-
 var player = {
   name: 'Zach',
   smileyness: 0,
@@ -105,8 +101,9 @@ function addmods() {
 
 function reset() {
   player.smileyness = 0;
+  player.smileyIndex = 0;
   player.hits = 0;
-  document.getElementById("zach-image").src = "/assets/images/zach_frown.png";
+  document.getElementById("zach-image").setAttribute("src", player.images[0]);
   player.items.pop();
   document.getElementById('playerButton1').disabled = false;
   document.getElementById('playerButton2').disabled = false;
