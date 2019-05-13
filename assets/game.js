@@ -4,7 +4,7 @@ var player = {
   smileyIndex: 0,
   frownPower: 50,
   hits: 0,
-  images: ['/assets/images/zach_frown.png', '/assets/images/zach_rbf.png', '/assets/images/zach_selfie.png'],
+  images: ['assets/images/zach_frown.png', 'assets/images/zach_rbf.png', 'assets/images/zach_selfie.png'],
   items: [],
 }
 
