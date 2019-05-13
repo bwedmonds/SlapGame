@@ -26,42 +26,6 @@ var items = {
   }
 }
 
-// function highFive() {
-//   player.smileyness++;
-//   player.hits++;
-//   update()
-// }
-
-// function rumPunch() {
-//   player.smileyness += 2;
-//   player.hits += 1;
-//   update()
-// }
-
-// function cake() {
-//   player.smileyness += 2;
-//   player.hits += 1;
-//   update();
-// }
-
-// function tickle() {
-//   player.smileyness += 3;
-//   player.hits += 1;
-//   update();
-// }
-
-// function cuddle() {
-//   player.smileyness += 3;
-//   player.hits += 1;
-//   update();
-// }
-
-// function hug() {
-//   player.smileyness += 3;
-//   player.hits += 1;
-//   update();
-// }
-
 function increaseSmileyIndex() {
   if (player.smileyness >= player.frownPower && player.smileyIndex == 0) {
     player.smileyIndex++;
@@ -118,7 +82,6 @@ function reset() {
 }
 
 function update() {
-  // document.getElementById("smileyness").innerText = player.smileyness;
   document.getElementById('hits').innerText = player.hits.toString();
   document.getElementById('name').innerText = player.name;
   document.getElementById('player-smileyness').innerText = player.smileyness.toString();

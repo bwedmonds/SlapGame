@@ -26,11 +26,7 @@
 </header> -->
 
 <header class="row">
-  <!-- <div class="header-col w-100"> -->
-  <!-- <div class="justify-content-end align-items-center"> -->
-  <div class="col-8 offset-4 justify-content-center align-items-center">
-    <!-- <div class="row w-100 position-fixed zach-nav">
-      <div class="col-12 justify-contents-center"> -->
+  <div class="col-12 d-flex flex-column justify-content-center align-items-center">
     <h1>Zach Attack!</h1>
     <h3>Even Grumpy Cat thinks Zach needs to smile.</h3>
     <p>Help Grumpy turn Zach's frown upsidedown.</p>
@@ -39,21 +35,7 @@
 
 <body>
   <div class="container-fluid" id="background">
-    <!-- <div class="row w-100 position-fixed zach-nav align-items-center justify-contents-center"></div> -->
-    <!-- <div class="row align-items-center justify-contents-center">
-      <div class="col-12">
-        <h1>Zach Attack!</h1>
-        <h3>Even Grumpy Cat thinks Zach needs to smile.</h3>
-        <p>Help Grumpy turn Zach's frown upsidedown.</p>
-      </div>
-    </div> -->
-    <!-- </header> -->
-
-    <!-- <body> -->
-    <!-- <div class="container-fluid" id="background"> -->
     <div class="row">
-      <!-- <span>Name: <span id="name"></span></span> -->
-      <!-- <span>Smileyness: <span id="smileyness">0</span></span> -->
     </div>
     <div class="row justify-contents-center">
       <div class="col-2">
@@ -67,15 +49,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-6 bg-pop d-flex align-items-center justify-contents-center"><img src="/assets/images/grumpy.png"
+      <div class="col-6 bg-pop d-flex align-items-center justify-contents-center"><img src="assets/images/grumpy.png"
           style="width: auto; height: 70%; padding-left: 29%" alt="Grumpy">
       </div>
       <div class="col-6 bg-pop d-flex align-items-center justify-contents-center"><img id="zach-image"
-          src="/assets/images/zach_frown.png" style="width: auto; height: 70%; padding-left: 33%" alt="Zach Frown">
+          src="assets/images/zach_frown.png" style="width: auto; height: 70%; padding-left: 33%" alt="Zach Frown">
       </div>
     </div>
-    <!-- </div>
-  <div class="container-fluid"> -->
     <div class="row">
       <div class="col">
         <div class="row">
@@ -87,8 +67,7 @@
           </div>
           <div class="col-2"><button class="btn btn-extra" id="playerButton6" onclick="smilies(3)">Hug!</button>
           </div>
-        </div>
-        <div class="row">
+          <div class="w-100"></div>
           <div class="col-2"><button class="btn btn-mods" id="playerButton7" onclick="giveItem('bear')">Bear!</button>
           </div>
           <div class="col-2"><button class="btn btn-mods" id="playerButton8"
@@ -97,58 +76,56 @@
           <div class="col-2"><button class="btn btn-mods" id="playerButton9"
               onclick="giveItem('puppies')">Puppies!</button>
           </div>
-        </div>
-        <div class="row">
+          <div class="w-100"></div>
           <div class="col-6 d-flex align-items-center justify-contents-center">
             <h5>Choose addons carefully!</h5>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col align-items-center justify-contents-center">
-      <div class="row">
-        <div class="col-2">
-          <h5>Name: <span id="name"></span></h5>
-        </div>
-        <div class="col-2">
-          <h5>Hits: <span id="hits">0</span></h5>
-        </div>
-        <div class="col-2">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%;"
-              aria-vlauenow="0" aria-valuemin="0" aria-valuemax="100" id="player-smileyness"></div>
+      <div class="col align-items-center justify-contents-center">
+        <div class="row">
+          <div class="col-2">
+            <h5>Name: <span id="name"></span></h5>
           </div>
-          <h3>Smileyness</h3>
+          <div class="col-2">
+            <h5>Hits: <span id="hits">0</span></h5>
+          </div>
+          <div class="col">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%;"
+                aria-vlauenow="0" aria-valuemin="0" aria-valuemax="100" id="player-smileyness"></div>
+            </div>
+            <h3>Smileyness</h3>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="alertModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Winner!</h4>
-        </div>
-        <div class="modal-body">
-          <p></p>
+    <div id="alertModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Winner!</h4>
+          </div>
+          <div class="modal-body">
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-  <script src="assets/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+      </script>
+    <script src="assets/game.js"></script>
 
 </body>
 

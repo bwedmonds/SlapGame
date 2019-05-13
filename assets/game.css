@@ -1,5 +1,5 @@
 #background {
-  background-image: url("/assets/images/cloudy_sky.jpg");
+  background-image: url("images/cloudy_sky.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 }
 
 .bg-pop {
-  background-image: url("/assets/images/highlight.png");
+  background-image: url("images/highlight.png");
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 10px 10px 50px 0 rgb(142, 142, 142) inset, -10px -10px 50px 0 rgb(142, 142, 142) inset;
@@ -42,26 +42,15 @@
   color: white;
 }
 
-/* .progress-bar {
-  role: "progressbar";
-  aria-valuemin: "0";
-  aria-valuemax: "100";
-  [attr.aria-valuenow]: "health";
-  [style.width.%]: "trainingProgress";
-  {{trainingProgress}}%: Complete;
-} */
-
 .header-col {
   background-color: whitesmoke;
   height: 10vh;
   width: 100vw;
-  /* display: flex; */
   align-items: center;
   justify-content: center
 }
 
 .footer-row {
-  background-color: whitesmoke;
   height: 5vh;
   display: flex;
   align-items: center;
